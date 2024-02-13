@@ -1,0 +1,175 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.navLink.active svg path {
+    stroke: #435FB5 !important;
+}
+
+.themeTable {
+    position: relative;
+}
+
+.themeTable .addNewBtn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-search"] {
+    justify-content: flex-start !important;
+    margin: 10px 0;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-search"] input {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 30px;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table {
+    min-width: 100%;
+    border-radius: 15px !important;
+    text-transform: capitalize;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table thead {
+    background-color: #435FB5;
+    color: #fff;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table thead tr th {
+    padding-right: 35px;
+    white-space: nowrap;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table thead tr th:first-child {
+    border-left: 0;
+    border-top: 0;
+    border-top-left-radius: 15px !important;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table thead tr th:last-child {
+    border-right: 0;
+    border-top: 0;
+    border-top-right-radius: 15px !important;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table tr th, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table tr td {
+    font-weight: 400 !important;
+    border: 1px solid #c7dbff;
+    padding: 10px;
+    text-align: left;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table tbody tr td {
+    color: #495057;
+    font-size: 14px;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table tbody tr td .text-white {
+    color: #fff !important;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table tbody tr:hover {
+    background-color: #4360b50e !important;
+    cursor: pointer !important;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>th.sorting_asc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>th.sorting_desc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>th.sorting, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>td.sorting_asc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>td.sorting_desc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>td.sorting {
+    padding-right: 30px;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>th:active, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead>tr>td:active {
+    outline: none;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled {
+    position: relative;
+    cursor: pointer;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: 0.3;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0de";
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled:after, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled:after {
+    right: 16px;
+    font-family: "Font Awesome\ 5 Free", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0dd";
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+}
+
+.themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_asc_disabled:before, .themeTable .dataTables_wrapper .row div[data-test="datatable-table"] div[data-test="table"] table.dataTable thead .sorting_desc_disabled:after {
+    opacity: 0;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) div[data-test="datatable-pagination"] .dataTables_paginate ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) div[data-test="datatable-pagination"] .dataTables_paginate ul .page-item.disabled {
+    display: none;
+
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) div[data-test="datatable-pagination"] .dataTables_paginate ul .page-item a {
+    background-color: #435FB5;
+    border-radius: 5px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) div[data-test="datatable-pagination"] .dataTables_paginate ul .page-item:not(:first-child, :last-child) a {
+    background-color: rgba(44, 121, 255, 0.1);
+    color: #435FB5;
+    padding: 0px;
+}
+
+.themeTable .dataTables_wrapper .row:nth-child(3) div[data-test="datatable-pagination"] .dataTables_paginate ul .page-item.active a {
+    border: 1.5px solid #435FB5;
+}
