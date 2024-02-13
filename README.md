@@ -1,3 +1,18 @@
+# Project Description
+
+[Live link](https://profile-list-wheat.vercel.app/profile)
+
+The project is a web application featuring a comprehensive user interface built with React.js and Next.js. It incorporates various functionalities including a side navigation sidebar, a header with a logo, and two main routes: a profile route and a profile details page.
+In the header section, a logo is displayed alongside the navigation elements. The sidebar navigation provides easy access to different sections of the application.
+The profile route displays all available routes and provides access to various sections of the application. The profile details page, on the other hand, utilises a data table to showcase detailed information. The data table is fully functional and implemented using the mdreact library, displaying fields such as name, age, email, phone number, city, country, and image.
+
+Styling for the project has been achieved using Tailwind CSS, providing a sleek and responsive design.
+To manage state across components, React Context has been employed, ensuring efficient data flow and management within the application.
+API calls are made using Axios to fetch data, with approximately 200 records retrieved from the server. Pagination functionality has been implemented to manage the display of records efficiently.
+
+Additionally, a button has been integrated to enable users to download all records in a CSV file format, enhancing data accessibility and portability.
+Furthermore, Google Maps integration is incorporated within the application, offering an enhanced user experience and additional functionality.
+
 # Profile List
 
 This is an example project built for the purpose of testing your React (& NextJS) knowledge.
